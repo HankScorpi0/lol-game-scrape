@@ -1,0 +1,9 @@
+{
+  "name": "lol-game-scrape",
+  "description": "A node script to scrape sites for LoL match histories, request game data on them, and output results in a certain format.",
+  "author": "Ian McLaughlin <mclauia@gmail.com>",
+  "version": "0.0.1",
+  "devDependencies": {
+    "moment": "~2.8.3"
+  }
+}
