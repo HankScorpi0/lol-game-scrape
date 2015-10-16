@@ -24,3 +24,14 @@ http://lol.esportspedia.com/wiki/Riot_League_Championship_Series/North_America/2
 http://lol.esportspedia.com/wiki/2015_Season_North_America_Regional_Finals/Match_Details \
 http://lol.esportspedia.com/wiki/2015_Season_World_Championship/Match_Details
 ```
+
+## Example output:
+
+```
+10/01/2015 6:27 AM,FNC,IG,FNC,1834,54695,40136,7,0,3,0,1,0
+10/01/2015 8:24 AM,C9,AHQ,C9,1438,42637,33361,7,2,2,0,1,0
+10/01/2015 9:18 AM,SKT,H2K,SKT,1872,56435,44416,11,2,4,0,1,0
+10/01/2015 10:17 AM,EDG,BKT,EDG,1221,40010,25384,8,0,2,0,0,0
+10/01/2015 11:07 AM,CLG,FW,CLG,2515,67182,67686,9,6,2,3,0,1
+10/01/2015 12:20 PM,PNG,KOO,KOO,1864,41892,60932,3,9,1,3,0,1
+```

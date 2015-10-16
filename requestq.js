@@ -29,7 +29,8 @@
 
                 if (!next) return;
 
-                this.getHttp(next.uri, next.cb, function() {
+                this.getHttp(next.uri, function(data) {
+                    next.cb(data);
                     // if the queue is empty, done()
                     if (!queue.length) {
                         done();
@@ -43,8 +44,8 @@
             }
         }
 
-    // assemble chunks of data into complete response body, execute a callback, and let controller fn know we're done
-    RequestQueue.prototype.getHttp = function(url, cb, done, usehttps) {
+    // assemble chunks of data into complete response body, let controller fn know we're done
+    RequestQueue.prototype.getHttp = function(url, done, usehttps) {
         var protocol = usehttps ? https : http;
         protocol.get(url, function(res) {
             var concatdata = '';
@@ -53,8 +54,7 @@
                 concatdata += data;
             });
             res.on('end', function() {
-                cb(concatdata);
-                done();
+                done(concatdata);
             });
         }).on('error', function(e) {
             // @todo should do something with error response

@@ -88,8 +88,8 @@ if (scrape) {
 function enqueueGameUriRequest(uri) {
     queued++;
     gameResultsQueue.enqueue('https://acs.leagueoflegends.com/v1/stats/game/' + uri, function(data) {
-        timelog('response at');
         if (data == 'Too Many Requests') {
+            timelog('requeueing at');
             enqueueGameUriRequest(uri);
         } else {
             var gameData;
@@ -151,6 +151,7 @@ function processGameData(gameData) {
 
     statsCollection.push(stats);
     processed++;
+    timelog('processed '+processed+' at');
 }
 
 function scrapeDone() {
