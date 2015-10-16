@@ -27,6 +27,8 @@ http://lol.esportspedia.com/wiki/2015_Season_World_Championship/Match_Details
 
 ## Example output:
 
+Output request was for:
+Game date, blue team, red team, winner, game length (seconds), blue gold total, red gold total, blue tower kills, red tower kills, blue dragon kills, red dragon kills, blue baron kills, red baron kills
 ```
 10/01/2015 6:27 AM,FNC,IG,FNC,1834,54695,40136,7,0,3,0,1,0
 10/01/2015 8:24 AM,C9,AHQ,C9,1438,42637,33361,7,2,2,0,1,0
